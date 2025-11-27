@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>CRUD Logística - Terrestre y Marítima</title>
+  <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+
+  <h1>Gestión Logística</h1>
+
+  <!-- ----------------- TERRESTRE ----------------- -->
+  <div class="container">
+    <h2>Logística Terrestre</h2>
+
+    <label>Tipo de producto</label>
+    <input id="t_tipo" type="text">
+
+    <label>Cantidad</label>
+    <input id="t_cantidad" type="number">
+
+    <label>Fecha de registro</label>
+    <input id="t_fecha_registro" type="date">
+
+    <label>Fecha de entrega</label>
+    <input id="t_fecha_entrega" type="date">
+
+    <label>Bodega de entrega</label>
+    <input id="t_bodega" type="text">
+
+    <label>Precio de envío</label>
+    <input id="t_precio" type="number">
+
+    <label>Placa del vehículo (ABC123)</label>
+    <input id="t_placa" type="text">
+
+    <label>Número de guía (10 caracteres)</label>
+    <input id="t_guia" type="text">
+
+    <button onclick="crearTerrestre()">Guardar</button>
+
+    <table id="tablaTerrestre">
+      <thead>
+        <tr>
+          <th>ID</th><th>Producto</th><th>Cantidad</th><th>Registro</th><th>Entrega</th><th>Bodega</th><th>Precio</th><th>Placa</th><th>Guía</th><th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <!-- ----------------- MARÍTIMA ----------------- -->
+  <div class="container">
+    <h2>Logística Marítima</h2>
+
+    <label>Tipo de producto</label>
+    <input id="m_tipo" type="text">
+
+    <label>Cantidad</label>
+    <input id="m_cantidad" type="number">
+
+    <label>Fecha de registro</label>
+    <input id="m_fecha_registro" type="date">
+
+    <label>Fecha de entrega</label>
+    <input id="m_fecha_entrega" type="date">
+
+    <label>Puerto de entrega</label>
+    <input id="m_puerto" type="text">
+
+    <label>Precio de envío</label>
+    <input id="m_precio" type="number">
+
+    <label>Número de flota (ABC1234A)</label>
+    <input id="m_flota" type="text">
+
+    <label>Número de guía (10 caracteres)</label>
+    <input id="m_guia" type="text">
+
+    <button onclick="crearMaritima()">Guardar</button>
+
+    <table id="tablaMaritima">
+      <thead>
+        <tr>
+          <th>ID</th><th>Producto</th><th>Cantidad</th><th>Registro</th><th>Entrega</th><th>Puerto</th><th>Precio</th><th>Flota</th><th>Guía</th><th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
